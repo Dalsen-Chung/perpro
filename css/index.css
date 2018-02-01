@@ -1,3 +1,89 @@
-a {
-  text-decoration: none;
+html, body {
+  height: 100%;
+}
+li{list-style: none;display: block;}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: Microsoft Yahei,SimSun,Helvetica;
+}
+
+header {
+  height: 5%;
+  background-color: #008CD7;
+  padding: 10px;
+}
+
+.title {
+  height: 100%;
+  text-align: center;
+}
+
+header img {
+  height: 100%;
+  border: none;
+  vertical-align: middle;
+}
+
+.title span {
+  vertical-align: middle;
+  color: #fff;
+  margin-left: 60px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  height: calc(95% - 20px);
+}
+
+aside, main {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+aside {
+  width: 15%;
+  float: left;
+  background-color: #CCCCCC;
+}
+aside .menu{
+  display: inline-block;
+  width: 95%;
+  overflow-y: auto;
+}
+.aside-scroll{
+  float: right;
+  height: 100%;
+  width: 5%;
+  background-color: blue;
+}
+.aside-scroll .scrollbar{
+  width: 50%;
+  margin: 5px auto;
+  background-color: #666666;
+  height: 80px;
+  border-radius: 5px;
+}
+main {
+  width: 85%;
+  float: right;
+}
+.content ul{
+  margin: 30px 0;
+  padding: 0;
+}
+.content ul li{
+  padding: 10px 20px;
+  font-size: 0.8rem;
+}
+.content span{
+  display: block;
+  text-align: center;
+}
+.content ul li:hover{
+  background-color: red;
+  border-left: 5px solid #AD7C0B;
 }
