@@ -80,15 +80,15 @@ EvilCircle.prototype.setControls = function() {
 EvilCircle.prototype.collisionDetect = function() {
   for (let j = 0; j < balls.length; j++) {
     if (balls[j].exists) {
-    let dx = this.x - balls[j].x;
-    let dy = this.y - balls[j].y;
-    let distance = Math.sqrt(dx * dx + dy * dy);
+      let dx = this.x - balls[j].x;
+      let dy = this.y - balls[j].y;
+      let distance = Math.sqrt(dx * dx + dy * dy);
 
-    if (distance < this.size + balls[j].size) {
-      balls[j].exists = false;
+      if (distance < this.size + balls[j].size) {
+        balls[j].exists = false;
+      }
     }
   }
-}
 }
 
 Ball.prototype = Object.create(Shape.prototype);
@@ -138,11 +138,14 @@ Ball.prototype.collisionDetect = function() {
 
 let balls = [];
 
+let evilCircle = new EvilCircle(random(0, width), random(0, height), true);
+evilCircle.setControls();
+
 function loop() {
   ctx.fillStyle = 'rgba(0,0,0,0.25)';
   ctx.fillRect(0, 0, width, height);
 
-  while (balls.length < 25) {
+  while (balls.length < 5) {
     let ball = new Ball(
       random(0, width),
       random(0, height),
@@ -156,10 +159,16 @@ function loop() {
   }
 
   for (let i = 0; i < balls.length; i++) {
-    balls[i].draw();
-    balls[i].update();
-    balls[i].collisionDetect();
+    if (balls[i].exists) {
+      balls[i].draw();
+      balls[i].update();
+      balls[i].collisionDetect();
+    }
   }
+
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
 
   requestAnimationFrame(loop);
 }
