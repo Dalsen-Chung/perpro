@@ -1,4 +1,5 @@
 let canvas = document.querySelector('canvas');
+let p = document.querySelector('p');
 
 let ctx = canvas.getContext('2d');
 
@@ -86,6 +87,7 @@ EvilCircle.prototype.collisionDetect = function() {
 
       if (distance < this.size + balls[j].size) {
         balls[j].exists = false;
+        count--;
       }
     }
   }
@@ -137,6 +139,7 @@ Ball.prototype.collisionDetect = function() {
 }
 
 let balls = [];
+let count = 0;
 
 let evilCircle = new EvilCircle(random(0, width), random(0, height), true);
 evilCircle.setControls();
@@ -145,7 +148,7 @@ function loop() {
   ctx.fillStyle = 'rgba(0,0,0,0.25)';
   ctx.fillRect(0, 0, width, height);
 
-  while (balls.length < 5) {
+  while (balls.length < 100) {
     let ball = new Ball(
       random(0, width),
       random(0, height),
@@ -156,7 +159,10 @@ function loop() {
       true
     );
     balls.push(ball);
+    count++;
   }
+
+  p.textContent = 'Ball count: ' + count;
 
   for (let i = 0; i < balls.length; i++) {
     if (balls[i].exists) {
