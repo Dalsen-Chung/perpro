@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DrivingCar</title>
+  <style media="screen">
+    html,body{
+      margin: 0;
+      padding: 0;
+    }
+    .carWarp{
+      width: 80px;
+      height: 40px;
+      background-color: #BE453D;
+      margin: 20px auto;
+      border-radius: 5px;
+      border: 2px solid #281400;
+      position: relative;
+    }
+    .carTop{
+      width: 100%;
+      height: 15%;
+      background-color: #D6A441;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      border-bottom: 1px solid #281400;
+    }
+    .carWindow1{
+      width: 40%;
+      height: 30%;
+      background-color: #97C3DE;
+      margin-top: 3px;
+      border-top: 1px solid #281400;
+      border-bottom: 1px solid #281400;
+    }
+    .carWindow2{
+      width: 20%;
+      height: 30%;
+      background-color: #97C3DE;
+      margin-top: 3px;
+      border-top: 1px solid #281400;
+      border-bottom: 1px solid #281400;
+    }
+    .carWindow1 div{
+      width: 50%;
+      height: 50%;
+      background-color: #97C3DE;
+      float: left;
+      border: 1px solid #281400;
+      box-sizing: border-box;
+    }
+    .carWindow1 div:nth-child(2n){
+      border-right: 0;
+    }
+    .carDoor{
+      width: 20%;
+      height: 70%;
+      position: absolute;
+      top: 10px;
+      left: 32px;
+    }
+    .carDoor div{
+      width: 50%;
+      height: 100%;
+      float: left;
+      background-color: #97C3DE;
+      box-sizing: border-box;
+    }
+    .carDoor div:nth-child(1){
+      border: 2px solid #281400;
+      border-right: 1px solid #281400;
+    }
+    .carDoor div:nth-child(2){
+      border-top: 2px solid #281400;
+      border-right: 2px solid #281400;
+      border-left: 1px solid #281400;
+      border-bottom: 2px solid #281400;
+    }
+    .carWindow2{
+      position: absolute;
+      top: 7px;
+      left: 47px;
+    }
+    .carWindow2 div{
+      width: 50%;
+      height: 50%;
+      background-color: #97C3DE;
+      float: left;
+      border: 1px solid #281400;
+      box-sizing: border-box;
+    }
+    .carWindow2 div:nth-child(2n){
+      border-right: 2px solid #281400;
+    }
+    .carWindow3{
+      width: 15%;
+      height: 25%;
+      background-color: #97C3DE;
+      margin-top: 3px;
+      border-top: 2px solid #281400;
+      border-bottom: 2px solid #281400;
+      border-left: 2px solid #281400;
+      position: absolute;
+      top: 7px;
+      left: 66px;
+    }
+    .tailLamp{
+      width: 3px;
+      height: 7px;
+      margin-top: 2px;
+      background-color: #FCEF51;
+      border-top: 2px solid #281400;
+      border-right: 2px solid #281400;
+      border-bottom: 2px solid #281400;
+    }
+    .headLamp1{
+      width: 6px;
+      height: 3px;
+      background-color: #FCEF51;
+      border-radius: 3px 3px 0 0;
+      transform: rotateZ(-90deg);
+      border-top: 2px solid #281400;
+      border-right: 2px solid #281400;
+      border-left: 2px solid #281400;
+      box-sizing: border-box;
+      position: absolute;
+      top: 27px;
+      right: -2px;
+    }
+    .headLamp2{
+      width: 6px;
+      height: 3px;
+      background-color: #FCEF51;
+      border-radius: 3px 3px 0 0;
+      transform: rotateZ(-90deg);
+      border-top: 2px solid #281400;
+      border-right: 2px solid #281400;
+      border-left: 2px solid #281400;
+      box-sizing: border-box;
+      position: absolute;
+      top: 34px;
+      right: -2px;
+    }
+    .mirror{
+      width: 2px;
+      height: 6px;
+      background-color: #B44846;
+      border: 2px solid #281400;
+      position: absolute;
+      top: 18px;
+      right: 3px;
+    }
+    .tailTyre,.headTyre{
+      width: 20px;
+      height: 20px;
+      background-color: #69676A;
+      border-radius: 50%;
+      border: 2px solid #281400;
+      box-sizing: border-box;
+    }
+    .tailTyre{
+      position: absolute;
+      top: 30px;
+      left: 8px;
+    }
+    .headTyre{
+      position: absolute;
+      top: 30px;
+      right: 7px;
+    }
+  </style>
+</head>
+<body>
+  <div class="carWarp">
+    <div class="carTop"></div>
+    <div class="carWindow1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="carDoor">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="carWindow2">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="carWindow3"></div>
+    <div class="tailLamp"></div>
+    <div class="headLamp1"></div>
+    <div class="headLamp2"></div>
+    <div class="mirror"></div>
+    <div class="tailTyre"></div>
+    <div class="headTyre"></div>
+  </div>
+</body>
+</html>
