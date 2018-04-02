@@ -1,4 +1,4 @@
-//观察者模式                  利用对象存储不同的事件类型，再利用数组根据事件类型存储具体事件，形成事件队列
+//观察者模式                  利用对象存储不同的事件类型，再利用数组根据事件类型存储具体事件，形成事件队列      *********** 不同开发人员实现功能模块解耦
 let Observer = (function(){
   let _message = {};
   return{
@@ -35,9 +35,12 @@ let Observer = (function(){
     }
   }
 })();
-
+function call (){
+  console.log('I am calling Shirley');
+}
+Observer.regist('call',call);
 Observer.regist('call',function(e){                //订阅事件
   console.log('I am calling '+ e.args.name);
 });
-
 Observer.fire('call',{name : 'dalsen'});       //发布事件
+Observer.remove('call',call);                  //取消订阅某个事件
