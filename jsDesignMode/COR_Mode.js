@@ -18,6 +18,7 @@ let saveData = function (arr) {
   $.ajax({
     type : 'post',
     url : '',
+    data : arr,
     success : function (data) {
 
     }
