@@ -44,8 +44,26 @@ let CanvasCommand = (function(){
         return;
       }
       if (msg.length){
-
+        let len = msg.length;
+        let i = 0;
+        for (; i < len  ; i++){
+          // let command = msg[i].command;
+          // let args = Object.prototype.toString.call(msg[i].args) === '[object Array]' ? msg[i].args : [msg[i].args];
+          // Action[command].apply(Action,args);
+          this.excute(msg[i]);
+        }
+      }else{
+        let command = msg.command;
+        let arg = Object.prototype.toString.call(msg.args) === '[object Array]' ? msg.args : [msg.args];
+        console.log(arg.length);
+        Action[command].apply(Action, arg);
       }
     }
   }
 })();
+
+CanvasCommand.excute([                               //执行命令
+  {command : 'fillStyle' , args : 'red'},
+  {command : 'fillRect' , args : [20, 20, 100, 100]},
+  {command : 'fillRect' , args : [120, 120, 100, 100]}
+]);
