@@ -1,0 +1,121 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 1600px;
+    height: 900px;
+  }
+
+  aside {
+    width: 800px;
+    height: 900px;
+    background-image: url(img/5-120601092211.gif);
+    float: left;
+  }
+
+  aside>div>div:nth-of-type(1) {
+    color: black;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 90px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+  }
+
+  aside>div>div:nth-of-type(2) {
+    color: black;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+    line-height: 30px;
+    width: 300px;
+  }
+
+  aside>div>div:nth-of-type(3)>img {
+    margin-left: 450px;
+    margin-top: -450px;
+    padding: 10px 10px 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    position: fixed;
+    top: 600px;
+    left: 20px;
+    border-radius: 20px;
+  }
+
+  aside>div:nth-of-type(2) {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  section {
+    width: 800px;
+    height: 900px;
+    background-image: url(img/5-120601092211.gif);
+    float: left;
+    margin-top: -10px;
+  }
+
+  section>div>div:nth-of-type(1) {
+    color: black;
+    font-size: 30px;
+    margin-top: 100px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+  }
+
+  section>div>div:nth-of-type(2) {
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 30px;
+    width: 300px;
+  }
+
+  section>div>div:nth-of-type(3)>img {
+    margin-left: 340px;
+    margin-top: -400px;
+    position: fixed;
+    top: 480px;
+  }
+
+  section>div>div:nth-of-type(4)>img {
+    margin-left: 340px;
+    margin-top: -190px;
+  }
+
+  section>div:nth-of-type(2) {
+    padding: 30px;
+    -webkit-column-count: 3;
+    -webkit-column-rule: 4px double black;
+    -moz-column-count: 3;
+    -moz-column-rule: 4px double black;
+  }
+
+  footer {
+    width: 1600px;
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 5;
+    margin-top: 827px;
+  }
+
+  footer>div {
+    color: yellow;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 1250px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+  }
+
+  .a {
+    border: 4px groove black;
+    border-radius: 40px;
+    width: 700px;
+    margin-top: 10px;
+  }

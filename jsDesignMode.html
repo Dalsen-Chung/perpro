@@ -8,6 +8,23 @@
 </head>
 <body>
   <button type="button" id="btn" name="button">aaa</button>
-  <script src="./jsDesignMode/mediatorMode.js" charset="utf-8"></script>
+  <!-- <script src="./jsDesignMode/mementoMode.js" charset="utf-8"></script> -->
+  <script type="text/javascript">
+  // function test() { // 一个作用域
+  //     for(var i = 0; i < 10; i++) { // 不是一个作用域
+  //         // count
+  //     }
+  //     console.log(i); // 10
+  // }
+  // test();
+  // let companies = [{CEO : 'a'},{CEO : 'b'},{CEO : 'c'}];
+  // let ceoS = companies.map( c => c.CEO);
+
+    let a = function () {
+      return function () {
+        return 'a';
+      }
+    }
+  </script>
 </body>
 </html>

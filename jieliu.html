@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>节流demo</title>
+  <style media="screen">
+    .demo{
+      height: 120vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <span>节流demo</span>
+  </div>
+  <script type="text/javascript">
+    let throttle = function (fn,time) {
+      let flag = true;
+      return function (...arg) {
+        if (!flag) return;
+        let that = this;
+        flag = false;
+        setTimeout(function(){
+          fn.apply(that,arg);
+          flag = true;
+        },time);
+      }
+    };
+    let fn = (e) => console.log(e);
+    window.onscroll = throttle(fn,5000);
+  </script>
+</body>
+</html>

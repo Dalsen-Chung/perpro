@@ -1,0 +1,127 @@
+  body {
+    width: 1600px;
+    margin: auto;
+    height: 950px;
+  }
+
+  header {
+    width: 1600px;
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    margin-bottom: -100px;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+  }
+
+  header>nav>div:first-child {
+    color: #FFFF00;
+    font-size: 40px;
+    padding-top: 13px;
+    padding-left: 60px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+  }
+
+  header>nav>div:nth-of-type(2) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 500px;
+  }
+
+  header>nav>div:nth-of-type(3) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+  }
+
+  header>nav>div:nth-of-type(4) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+  }
+
+  header>nav>div:nth-of-type(5) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+  }
+
+  header>nav>div:nth-of-type(6) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+  }
+
+  header>nav>div {
+    float: left;
+  }
+
+  aside {
+    background-image: url(img/15.jpg);
+    width: 1600px;
+    height: 900px;
+  }
+
+  aside>div:first-child {
+    font-size: 80px;
+    color: white;
+    padding-left: 1000px;
+    padding-top: 200px;
+    font-family: "华文彩云";
+  }
+
+  aside>div:nth-of-type(2) {
+    font-size: 40px;
+    color: white;
+    padding-left: 1000px;
+    margin-top: 20px;
+    font-family: "华文正楷";
+  }
+
+  aside>div>img {
+    width: 40px;
+    height: 40px;
+  }
+
+  a:hover {
+    background-color: yellow;
+    color: #000000;
+  }
+
+  a {
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    color: white;
+  }
+
+  footer>div {
+    color: yellow;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 1250px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+  }
+
+  footer {
+    width: 1600px;
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 5;
+    margin-top: -70px;
+  }

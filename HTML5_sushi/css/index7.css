@@ -1,0 +1,289 @@
+  a:hover {
+    background-color: yellow;
+    color: #000000;
+  }
+
+  a {
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    color: white;
+  }
+
+  body {
+    width: 1600px;
+    height: 950;
+    margin: auto;
+  }
+
+  footer {
+    width: 1600px;
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 5;
+    margin-top: -70px;
+  }
+
+  footer>div {
+    color: yellow;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 1250px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    margin-bottom: -100px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  header>ul>div {
+    color: #FFFF00;
+    font-size: 40px;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+  }
+
+  header>ul>li:nth-of-type(1) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 500px;
+  }
+
+  header>ul>li:nth-of-type(2) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+  }
+
+  header>ul>li:nth-of-type(3) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+  }
+
+  header>ul>li:nth-of-type(4) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+  }
+
+  header>ul>li:nth-of-type(5) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    margin-left: 60px;
+    margin-right: 80px;
+  }
+
+  aside {
+    width: 1600px;
+    background-image: url(img/5-120601092211.gif);
+    height: 950px;
+  }
+
+  aside>div:nth-of-type(1) {
+    margin-left: 150px;
+    font-size: 80px;
+    padding-top: 120px;
+    opacity: 0.5;
+  }
+
+  aside>div:nth-of-type(2) {
+    margin-left: 150px;
+    font-size: 40px;
+    opacity: 0.5;
+    margin-top: 10px;
+  }
+
+  aside>div:nth-of-type(3) {
+    width: 400px;
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+
+  aside>div:nth-of-type(4) {
+    font-size: 20px;
+    padding-left: 150px;
+    margin-top: 90px;
+  }
+
+  aside>div:nth-of-type(5) {
+    font-size: 20px;
+    padding-left: 150px;
+    margin-top: 20px;
+  }
+
+  aside>div:nth-of-type(6) {
+    font-size: 20px;
+    padding-left: 150px;
+    margin-top: 20px;
+  }
+
+  aside>div:nth-of-type(7) {
+    font-size: 20px;
+    padding-left: 150px;
+    margin-top: 20px;
+  }
+
+  aside>div:nth-of-type(8)>img:nth-of-type(1) {
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+
+  aside>div:nth-of-type(8)>img:nth-of-type(2) {
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+
+  aside>div:nth-of-type(9) {
+    margin-left: 800px;
+    margin-top: -480px;
+  }
+
+  aside>div:nth-of-type(10) {
+    margin-top: -400px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 800px;
+  }
+
+  aside>div:nth-of-type(11) {
+    margin-left: 1350px;
+    padding-top: 400px;
+  }
+
+  aside>div:nth-of-type(12) {
+    margin-left: 1350px;
+    margin-top: 30px;
+  }
+
+  aside>div:nth-of-type(13) {
+    margin-top: -370px;
+    margin-left: 150px;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+  }
+
+  aside>div:nth-of-type(14) {
+    margin-top: -350px;
+    font-size: 50px;
+    font-family: "华文彩云";
+    margin-left: 650px;
+  }
+
+  aside>div:nth-of-type(8)>img:hover {
+    box-shadow: 2px 2px 2px 2px black;
+  }
+
+  aside>div>a {
+    color: #000000;
+    font-weight: bold;
+  }
+
+  button {
+    padding: 10px 40px;
+  }
+
+  @media (min-width: 1200px) {}
+
+  /*在992 和1199 像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    nav div:nth-child(1) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      height: 70px;
+      margin: 0;
+      list-style: none
+    }
+  }
+
+  /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    nav div:nth-child(1) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      height: 70px;
+      margin: 0;
+      list-style: none
+    }
+    li {
+      1 auto
+    }
+  }
+
+  /*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    nav div:nth-child(1) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      height: 70px;
+      margin: 0;
+      list-style: none
+    }
+    li {
+      1 auto
+    }
+  }
+
+  /*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+
+  @media (max-width: 479px) {
+    nav div:nth-child(1) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      height: 70px;
+      margin: 0;
+      list-style: none
+    }
+    li {
+      1 auto
+    }
+  }
